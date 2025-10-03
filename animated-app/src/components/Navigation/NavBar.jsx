@@ -1,14 +1,17 @@
-import React, { useRef } from "react";
+import React, { useContext, useRef } from "react";
+import { NavbarContext } from "../context/NavContext";
 
 const NavBar = () => {
   const navGreenRef = useRef(null);
+  const [openNav, setOpenNav] = useContext(NavbarContext);
+
   return (
     <div className="z-10 flex fixed top-0 w-full items-start justify-between">
-      <div className="px-2">
+      <div className="p-2">
         <svg
           xmlns="http://www.w3.org/2000/svg"
-          width="80"
-          height="44"
+          width="96"
+          height="48"
           viewBox="0 0 103 44"
         >
           <path
@@ -19,19 +22,25 @@ const NavBar = () => {
         </svg>
       </div>
       <div
+        onClick={() => {
+          setOpenNav(true);
+        }}
         onMouseEnter={() => {
           navGreenRef.current.style.height = "100%";
         }}
         onMouseLeave={() => {
           navGreenRef.current.style.height = "0%";
         }}
-        className="bg-black relative h-12 w-52 cursor-pointer"
+        className="bg-black relative h-14 w-52 cursor-pointer"
       >
-        <div></div>
         <div
           ref={navGreenRef}
           className="bg-[#D3F350] transition-all absolute h-full w-full t-0"
         ></div>
+        <div className="relative flex h-full flex-col px-12 justify-center items-end gap-1.5">
+          <div className="absolute w-12 h-[1px] bg-white mt-2 mb-1"></div>
+          <div className="absolute w-7 h-[0.5px] bg-white mt-3"></div>
+        </div>
       </div>
     </div>
   );
