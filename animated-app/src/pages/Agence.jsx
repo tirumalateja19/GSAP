@@ -50,41 +50,35 @@ const Agence = () => {
     });
   });
   return (
-    <div className="bg-black">
-      <div className="section1 py-1">
-        <div
-          ref={ImageDivRef}
-          className="w-[14vw] h-[18vw] rounded-3xl absolute left-[31vw]
-        top-[12vw] overflow-hidden"
-        >
-          <img
-            ref={imageRef}
-            className="w-full h-full object-cover"
-            src="https://k72.ca/images/teamMembers/Carl_480x640.jpg?w=480&h=640&fit=crop&s=f0a84706bc91a6f505e8ad35f520f0b7"
-            alt=""
-          />
-        </div>
-        <div className="relative">
-          <div className="mt-[50vh] font-[font1]">
-            <h1 className="text-[19vw] uppercase leading-[18vw] text-center ">
-              SEVEN7Y <br /> TWO
-            </h1>
-          </div>
-          <div className="pl-[40%] mt-4 p-3">
-            <p className="lg:text-5xl text-lg leading-tight text-start">
-              &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-              We’re inquisitive and open-minded, and we make sure creativity
-              crowds out ego from every corner. A brand is a living thing, with
-              values, a personality and a story. If we ignore that, we can
-              achieve short-term success, but not influence that goes the
-              distance. We bring that perspective to every brand story we help
-              tell.
-            </p>
-          </div>
-        </div>
+    <div className="section1 py-1 bg-black h-[200vh]">
+      <div
+        ref={ImageDivRef}
+        className="lg:w-[14vw] lg:h-[18vw] w-[85vw] h-[35vw] rounded-3xl absolute lg:left-[31vw]
+        top-[12vw] left-[10vw] overflow-hidden "
+      >
+        <img
+          ref={imageRef}
+          className="w-full h-full lg:object-cover object-contain"
+          src="https://k72.ca/images/teamMembers/Carl_480x640.jpg?w=480&h=640&fit=crop&s=f0a84706bc91a6f505e8ad35f520f0b7"
+          alt=""
+        />
       </div>
-      <div className="section2 h-screen">
-        <div></div>
+      <div className="relative">
+        <div className="mt-[50vh] font-[font1] overflow-hidden">
+          <h1 className="text-[19vw] uppercase leading-[18vw] text-center ">
+            SEVEN7Y <br /> TWO
+          </h1>
+        </div>
+        <div className="pl-[40%] mt-4 p-3">
+          <p className="lg:text-3xl text-lg leading-tight text-start">
+            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+            We’re inquisitive and open-minded, and we make sure creativity
+            crowds out ego from every corner. A brand is a living thing, with
+            values, a personality and a story. If we ignore that, we can achieve
+            short-term success, but not influence that goes the distance. We
+            bring that perspective to every brand story we help tell.
+          </p>
+        </div>
       </div>
     </div>
   );

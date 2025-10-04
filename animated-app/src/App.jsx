@@ -7,7 +7,7 @@ import NavBar from "./components/Navigation/NavBar";
 import FullScreenNav from "./components/Navigation/FullScreenNav";
 const App = () => {
   return (
-    <div className="text-white h-full w-full">
+    <div className="text-white overflow-x-hidden">
       <NavBar />
       <FullScreenNav />
       <Routes>

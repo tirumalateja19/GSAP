@@ -102,15 +102,15 @@ const FullScreenNav = () => {
             onClick={() => {
               setNavOpen(false);
             }}
-            className="h-20 w-20 relative cursor-pointer"
+            className="lg:h-20 lg:w-20  h-10 w-10 lg:p-0 py-1 relative cursor-pointer"
           >
-            <div className="h-[7vw] w-1 -rotate-45 origin-top absolute bg-white"></div>
-            <div className="h-[7vw] w-1 rotate-45 origin-top right-0 absolute bg-white"></div>
+            <div className="lg:h-[7vw] h-[6vh] w-1 -rotate-45 origin-top absolute bg-white"></div>
+            <div className="lg:h-[7vw] h-[6vh] w-1 rotate-45 origin-top right-0 absolute bg-white"></div>
           </div>
         </div>
-        <div className=" py-22">
-          <div className="link origin-top relative border-t-[0.5px] border-white">
-            <h1 className="font-[font2] text-5xl lg:text-[8vw] text-center lg:leading-[0.8] lg:pt-10 pt-3 uppercase">
+        <div className=" lg:py-[4vh] py-[30vw]">
+          <div className="link origin-top overflow-hidden relative border-t-[0.5px] border-white">
+            <h1 className="font-[font2] text-5xl lg:text-[8vw] text-center lg:leading-[0.8] leading-[8vh] lg:pt-10 pt-3 uppercase">
               Projets
             </h1>
             <div className="moveLink absolute text-black flex top-0 bg-[#D3FD50]">
@@ -119,7 +119,7 @@ const FullScreenNav = () => {
                   Pour Tout voir
                 </h2>
                 <img
-                  className="lg:h-36 h-14 rounded-full shrink-0 lg:w-96 w-32 object-cover"
+                  className="lg:h-32 h-14 rounded-full shrink-0 lg:w-96 w-32 object-cover"
                   src="https://k72.ca/uploads/caseStudies/WIDESCAPE/WS---K72.ca---MenuThumbnail-640x290.jpg"
                   alt=""
                 />
@@ -127,7 +127,7 @@ const FullScreenNav = () => {
                   Pour Tout voir
                 </h2>
                 <img
-                  className="lg:h-36 h-14 rounded-full shrink-0 lg:w-96 w-32 object-cover"
+                  className="lg:h-32 h-14 rounded-full shrink-0 lg:w-96 w-32 object-cover"
                   src="https://k72.ca/uploads/caseStudies/PJC/Thumbnails/PJC_SiteK72_Thumbnail_640x290-640x290.jpg"
                   alt=""
                 />
@@ -137,7 +137,7 @@ const FullScreenNav = () => {
                   Pour Tout voir
                 </h2>
                 <img
-                  className="lg:h-36 h-14 rounded-full shrink-0 lg:w-96 w-32 object-cover"
+                  className="lg:h-32 h-14 rounded-full shrink-0 lg:w-96 w-32 object-cover"
                   src="https://k72.ca/uploads/caseStudies/WIDESCAPE/WS---K72.ca---MenuThumbnail-640x290.jpg"
                   alt=""
                 />
@@ -145,15 +145,15 @@ const FullScreenNav = () => {
                   Pour Tout voir
                 </h2>
                 <img
-                  className="lg:h-36 h-14 rounded-full shrink-0 lg:w-96 w-32 object-cover"
+                  className="lg:h-32 h-14 rounded-full shrink-0 lg:w-96 w-32 object-cover"
                   src="https://k72.ca/uploads/caseStudies/PJC/Thumbnails/PJC_SiteK72_Thumbnail_640x290-640x290.jpg"
                   alt=""
                 />
               </div>
             </div>
           </div>
-          <div className="link origin-top relative border-t-[0.5px] border-white">
-            <h1 className="font-[font2] text-5xl lg:text-[8vw] text-center lg:leading-[0.8] lg:pt-10 pt-3 uppercase">
+          <div className="link origin-top overflow-hidden relative border-t-[0.5px] border-white">
+            <h1 className="font-[font2] text-5xl lg:text-[8vw] text-center lg:leading-[0.8] lg:pt-10 pt-3 uppercase leading-[8vh]">
               Agence
             </h1>
             <div className="moveLink absolute text-black flex top-0 bg-[#D3FD50]">
@@ -162,7 +162,7 @@ const FullScreenNav = () => {
                   Pour Tout voir
                 </h2>
                 <img
-                  className="lg:h-36 h-14 rounded-full shrink-0 lg:w-96 w-32 object-cover"
+                  className="lg:h-32 h-14 rounded-full shrink-0 lg:w-96 w-32 object-cover"
                   src="https://k72.ca/uploads/caseStudies/WIDESCAPE/WS---K72.ca---MenuThumbnail-640x290.jpg"
                   alt=""
                 />
@@ -170,7 +170,7 @@ const FullScreenNav = () => {
                   Pour Tout voir
                 </h2>
                 <img
-                  className="lg:h-36 h-14 rounded-full shrink-0 lg:w-96 w-32 object-cover"
+                  className="lg:h-32 h-14 rounded-full shrink-0 lg:w-96 w-32 object-cover"
                   src="https://k72.ca/uploads/caseStudies/PJC/Thumbnails/PJC_SiteK72_Thumbnail_640x290-640x290.jpg"
                   alt=""
                 />
@@ -180,7 +180,7 @@ const FullScreenNav = () => {
                   Pour Tout voir
                 </h2>
                 <img
-                  className="lg:h-36 h-14 rounded-full shrink-0 lg:w-96 w-32 object-cover"
+                  className="lg:h-32 h-14 rounded-full shrink-0 lg:w-96 w-32 object-cover"
                   src="https://k72.ca/uploads/caseStudies/WIDESCAPE/WS---K72.ca---MenuThumbnail-640x290.jpg"
                   alt=""
                 />
@@ -188,15 +188,15 @@ const FullScreenNav = () => {
                   Pour Tout voir
                 </h2>
                 <img
-                  className="lg:h-36 h-14 rounded-full shrink-0 lg:w-96 w-32 object-cover"
+                  className="lg:h-32 h-14 rounded-full shrink-0 lg:w-96 w-32 object-cover"
                   src="https://k72.ca/uploads/caseStudies/PJC/Thumbnails/PJC_SiteK72_Thumbnail_640x290-640x290.jpg"
                   alt=""
                 />
               </div>
             </div>
           </div>
-          <div className="link origin-top relative border-t-[0.5px] border-white">
-            <h1 className="font-[font2] text-5xl lg:text-[8vw] text-center lg:leading-[0.8] lg:pt-10 pt-3 uppercase">
+          <div className="link origin-top overflow-hidden relative border-t-[0.5px] border-white">
+            <h1 className="font-[font2] text-5xl lg:text-[8vw] text-center lg:leading-[0.8] lg:pt-10 pt-3 uppercase leading-[8vh]">
               Contact
             </h1>
             <div className="moveLink absolute text-black flex top-0 bg-[#D3FD50]">
@@ -205,7 +205,7 @@ const FullScreenNav = () => {
                   Pour Tout voir
                 </h2>
                 <img
-                  className="lg:h-36 h-14 rounded-full shrink-0 lg:w-96 w-32 object-cover"
+                  className="lg:h-32 h-14 rounded-full shrink-0 lg:w-96 w-32 object-cover"
                   src="https://k72.ca/uploads/caseStudies/WIDESCAPE/WS---K72.ca---MenuThumbnail-640x290.jpg"
                   alt=""
                 />
@@ -213,7 +213,7 @@ const FullScreenNav = () => {
                   Pour Tout voir
                 </h2>
                 <img
-                  className="lg:h-36 h-14 rounded-full shrink-0 lg:w-96 w-32 object-cover"
+                  className="lg:h-32 h-14 rounded-full shrink-0 lg:w-96 w-32 object-cover"
                   src="https://k72.ca/uploads/caseStudies/PJC/Thumbnails/PJC_SiteK72_Thumbnail_640x290-640x290.jpg"
                   alt=""
                 />
@@ -223,7 +223,7 @@ const FullScreenNav = () => {
                   Pour Tout voir
                 </h2>
                 <img
-                  className="lg:h-36 h-14 rounded-full shrink-0 lg:w-96 w-32 object-cover"
+                  className="lg:h-32 h-14 rounded-full shrink-0 lg:w-96 w-32 object-cover"
                   src="https://k72.ca/uploads/caseStudies/WIDESCAPE/WS---K72.ca---MenuThumbnail-640x290.jpg"
                   alt=""
                 />
@@ -231,15 +231,15 @@ const FullScreenNav = () => {
                   Pour Tout voir
                 </h2>
                 <img
-                  className="lg:h-36 h-14 rounded-full shrink-0 lg:w-96 w-32 object-cover"
+                  className="lg:h-32 h-14 rounded-full shrink-0 lg:w-96 w-32 object-cover"
                   src="https://k72.ca/uploads/caseStudies/PJC/Thumbnails/PJC_SiteK72_Thumbnail_640x290-640x290.jpg"
                   alt=""
                 />
               </div>
             </div>
           </div>
-          <div className="link origin-top relative border-t-[0.5px] border-b-[0.5px] border-white">
-            <h1 className="font-[font2] text-5xl lg:text-[8vw] text-center lg:leading-[0.8] lg:pt-10 pt-3 uppercase">
+          <div className="link origin-top overflow-hidden relative border-t-[0.5px] border-b-[0.5px] border-white">
+            <h1 className="font-[font2] text-5xl lg:text-[8vw] text-center lg:leading-[0.8] lg:pt-10 pt-3 uppercase leading-[8vh]">
               Blogs
             </h1>
             <div className="moveLink absolute text-black flex top-0 bg-[#D3FD50]">
@@ -248,7 +248,7 @@ const FullScreenNav = () => {
                   Pour Tout voir
                 </h2>
                 <img
-                  className="lg:h-36 h-14 rounded-full shrink-0 lg:w-96 w-32 object-cover"
+                  className="lg:h-32 h-14 rounded-full shrink-0 lg:w-96 w-32 object-cover"
                   src="https://k72.ca/uploads/caseStudies/WIDESCAPE/WS---K72.ca---MenuThumbnail-640x290.jpg"
                   alt=""
                 />
@@ -256,7 +256,7 @@ const FullScreenNav = () => {
                   Pour Tout voir
                 </h2>
                 <img
-                  className="lg:h-36 h-14 rounded-full shrink-0 lg:w-96 w-32 object-cover"
+                  className="lg:h-32 h-14 rounded-full shrink-0 lg:w-96 w-32 object-cover"
                   src="https://k72.ca/uploads/caseStudies/PJC/Thumbnails/PJC_SiteK72_Thumbnail_640x290-640x290.jpg"
                   alt=""
                 />
@@ -266,7 +266,7 @@ const FullScreenNav = () => {
                   Pour Tout voir
                 </h2>
                 <img
-                  className="lg:h-36 h-14 rounded-full shrink-0 lg:w-96 w-32 object-cover"
+                  className="lg:h-32 h-14 rounded-full shrink-0 lg:w-96 w-32 object-cover"
                   src="https://k72.ca/uploads/caseStudies/WIDESCAPE/WS---K72.ca---MenuThumbnail-640x290.jpg"
                   alt=""
                 />
@@ -274,7 +274,7 @@ const FullScreenNav = () => {
                   Pour Tout voir
                 </h2>
                 <img
-                  className="lg:h-36 h-14 rounded-full shrink-0 lg:w-96 w-32 object-cover"
+                  className="lg:h-32 h-14 rounded-full shrink-0 lg:w-96 w-32 object-cover"
                   src="https://k72.ca/uploads/caseStudies/PJC/Thumbnails/PJC_SiteK72_Thumbnail_640x290-640x290.jpg"
                   alt=""
                 />

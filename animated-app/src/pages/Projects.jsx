@@ -42,25 +42,50 @@ const Projects = () => {
   });
 
   return (
-    <div className="p-2">
-      <div className="pt-[24vw]">
-        <h1 className=" uppercase text-[8vw] font-[font2] text-black">
-          projects
-        </h1>
+    <>
+      <div className="hidden lg:block">
+        <div className="p-2 bg-black">
+          <div className="pt-[24vw]">
+            <h1 className=" uppercase lg:text-[8vw] top-0 text-[18vw] font-[font2] lg:ml-0 text-white">
+              projects
+            </h1>
+          </div>
+          <div className="lg:-mt-10 lol">
+            {projects.map(function (elem, idx) {
+              return (
+                <div
+                  key={idx}
+                  className="hero w-full h-[450px] mb-1 flex gap-1"
+                >
+                  <ProjectCard image1={elem.image1} image2={elem.image2} />
+                </div>
+              );
+            })}
+          </div>
+        </div>
       </div>
-      <div className="-mt-10 lol">
-        {projects.map(function (elem, idx) {
-          return (
-            <div
-              key={idx}
-              className="hero w-full lg:h-[550px] mb-4 flex lg:flex-row flex-col lg:gap-4 gap-2"
-            >
-              <ProjectCard image1={elem.image1} image2={elem.image2} />
-            </div>
-          );
-        })}
+      <div className="block lg:hidden">
+        <div className="p-2">
+          <div className="pt-[24vw]">
+            <h1 className=" uppercase lg:text-[8vw] top-0 text-[18vw] font-[font2] lg:ml-0 text-black">
+              projects
+            </h1>
+          </div>
+          <div className="lg:-mt-10 lol">
+            {projects.map(function (elem, idx) {
+              return (
+                <div
+                  key={idx}
+                  className="hero h-[1200px] w-full mb-1 flex lg:flex-row flex-col lg:gap-1 gap-1"
+                >
+                  <ProjectCard image1={elem.image1} image2={elem.image2} />
+                </div>
+              );
+            })}
+          </div>
+        </div>
       </div>
-    </div>
+    </>
   );
 };
 

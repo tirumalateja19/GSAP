@@ -3,9 +3,9 @@ import K72 from "../../utils/K72.mp4";
 
 const Video = () => {
   return (
-    <div>
+    <div className="h-full w-full">
       <video
-        className="w-full h-full object-contain"
+        className="w-full h-full object-cover"
         autoPlay
         muted
         loop
