@@ -68,3 +68,28 @@ button {
     background: rgb(77, 246, 77);
     border-radius: 10%;
 }
+
+#tl2-a {
+    height: 10vh;
+    width: 0;
+    background: pink;
+}
+
+#tl2-b {
+    height: 10vh;
+    width: 0;
+    background: rgb(85, 234, 245);
+}
+
+#tl2-c {
+    height: 10vh;
+    width: 0;
+    background: yellow;
+}
+
+.card-container {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    padding: 2px;
+}
