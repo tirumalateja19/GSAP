@@ -17,7 +17,7 @@ The idea was simple: learn by building, not just reading docs.
 | # | Project | Description | Stack |
 |---|---------|-------------|-------|
 | 01 | [Animated Website](./animated-app/) | Animated landing page with scroll triggers, timelines, and responsive motion design | React + GSAP |
-| 02 | Coming soon | — | — |
+| 02 | [Animations-Practice](./project-02/) | Practice all GSAP animations | React + GSAP |
 | 03 | Coming soon | — | — |
 
 ---
