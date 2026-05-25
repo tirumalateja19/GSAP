@@ -12,11 +12,13 @@ body {
 
 .title-container {
     text-align: center;
+    font-size: 5vh;
+    margin-bottom: 5vh;
 }
+
 .name,
 .name2 {
     display: inline-block;
-    font-size: 10vh;
     margin: 0;
 }
 
@@ -24,7 +26,7 @@ body {
     display: flex;
     margin: 10vh;
     gap: 10px;
-    flex-direction: column;
+    /* flex-direction: column; */
     align-items: center;
     justify-content: center;
 }
@@ -44,4 +46,25 @@ button {
     background-color: gold;
     cursor: pointer;
     font-size: medium;
+}
+
+.step1 {
+    height: 20vh;
+    width: 10vw;
+    background: rgb(72, 247, 244);
+    border-radius: 10%;
+}
+
+.step2 {
+    height: 20vh;
+    width: 10vw;
+    background: yellow;
+    border-radius: 10%;
+}
+
+.step3 {
+    height: 20vh;
+    width: 10vw;
+    background: rgb(77, 246, 77);
+    border-radius: 10%;
 }

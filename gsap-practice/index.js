@@ -9,15 +9,14 @@ gsap.from(".name2", {
   opacity: 0,
 });
 
-let tween = gsap.fromTo(
+let tween = gsap.to(
   ".box",
-  { x: -600 },
   {
-    x: 600,
+    x: 900,
     opacity: 1,
     duration: 6,
     ease: "power2.inOut",
-    rotation:360,
+    rotation: 360,
     // repeat: 1,
     onComplete: () => console.log("Tween completed"),
   },
@@ -32,3 +31,8 @@ document.querySelector("#restart").onclick = () => tween.restart();
 document.querySelector("#stop").onclick = () => {
   tween.kill();
 };
+
+const tl = gsap.timeline();
+tl.to(".step1", { opacity: 0, y: -20, duration: 0.5 });
+tl.to(".step2", { opacity: 0, y: -20, duration: 0.5 });
+tl.to(".step3", { opacity: 0, y: -20, duration: 0.5 });
