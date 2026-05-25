@@ -1,0 +1,34 @@
+gsap.defaults({ duration: 2, delay: 1, ease: "power4.inOut" });
+
+gsap.from(".name", {
+  x: -500,
+  opacity: 0,
+});
+gsap.from(".name2", {
+  x: 500,
+  opacity: 0,
+});
+
+let tween = gsap.fromTo(
+  ".box",
+  { x: -600 },
+  {
+    x: 600,
+    opacity: 1,
+    duration: 6,
+    ease: "power2.inOut",
+    rotation:360,
+    // repeat: 1,
+    onComplete: () => console.log("Tween completed"),
+  },
+);
+
+document.querySelector("#play").onclick = () => tween.play();
+document.querySelector("#pause").onclick = () => tween.pause();
+document.querySelector("#resume").onclick = () => tween.resume();
+document.querySelector("#speed").onclick = () => tween.timeScale(2);
+document.querySelector("#reverse").onclick = () => tween.reverse();
+document.querySelector("#restart").onclick = () => tween.restart();
+document.querySelector("#stop").onclick = () => {
+  tween.kill();
+};
